@@ -67,16 +67,16 @@ export class MainComponent {
     const tempArray = [];
     const originalLength = this.mockData.length
     for (let i = 0; i < originalLength; i++) {
-        
+
         const randomIndex = Math.floor(Math.random()*this.mockData.length);
         const student = this.mockData[randomIndex];
         tempArray.push(student);
         this.mockData.splice(randomIndex,1);
-        
+
     }
     this.mockData=tempArray;
     console.log(this.mockData=tempArray);
-    
+
 }
 
 getSquads(members:number){
@@ -94,7 +94,7 @@ getSquads(members:number){
           acc += ' e ';
       }
 
-      
+
   }
   return acc;
 }
